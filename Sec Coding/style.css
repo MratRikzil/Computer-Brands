@@ -1,0 +1,126 @@
+body{
+    width: 100%;
+    height:100%;
+    color: rgb(0, 0, 0);
+        
+}
+#firstPage{
+    background: linear-gradient(-45deg, #ff9a3c, #ffebbb, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+#secondPage{
+    background: linear-gradient(249deg, #26bb95, #e88513, #81786d, #9fe824);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 36s ease infinite;
+    -moz-animation: AnimationName 36s ease infinite;
+    animation: AnimationName 36s ease infinite;
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    
+}
+
+.abilityMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(4, 1, 0);
+    font-size: larger;
+    margin: 20px 10px 10px 15px;
+    padding-right: 30px;
+}
+.main{
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 35%;
+}
+h1{
+    text-align: center;
+}
+.profile{
+    border: solid #005792 5px;
+    border-radius: 50%;
+    margin-top: 30px;
+    max-width: 200px;
+    height: 200px;
+}
+ul{
+    text-align: left;
+    font-size: 18px;
+    
+}
+.explaination{
+    font-size: larger;
+    margin-left: 30px ;
+}
+.brands{
+    text-align: center;
+    margin: 20px 0 10px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+}
+.pcBrands{
+    width: 200px;
+    height:180px;
+    cursor: pointer;
+}
+.brandName{
+    text-align: center;
+    margin: 50px;
+   
+    color: #005792;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .3s linear;
+}
+
+.brandName:not(:first-child){
+    margin-left: -50px;
+}
+.brandName:hover{
+    transform: translateY(-24px);
+}
+.brandName:hover ~.brandName{
+    transform: translateX(60px);
+}
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+ 
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
